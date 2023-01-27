@@ -1,0 +1,71 @@
+/* 页尾的css代码 */
+footer {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+footer .left-logo,
+footer .right-contact {
+  float: left;
+}
+footer .left-logo {
+  width: 35%;
+  box-sizing: border-box;
+}
+footer .left-logo img {
+  max-width: 180px;
+}
+footer .right-contact {
+  width: 65%;
+  border-left: 1px solid #ccc;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+footer .right-contact ul.contact-list li.contact-item {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+footer .right-contact ul.contact-list li.contact-item i {
+  width: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+}
+footer .right-contact ul.contact-list li.contact-item span {
+  width: calc(100% - 26px);
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  footer .left-logo,
+  footer .right-contact {
+    float: none;
+  }
+  footer .left-logo {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  footer .right-contact {
+    width: 100%;
+    border-left: none;
+  }
+  footer .right-contact ul.contact-list li.contact-item {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+  }
+  footer .right-contact ul.contact-list li.contact-item i {
+    width: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+  }
+  footer .right-contact ul.contact-list li.contact-item span {
+    width: calc(100% - 26px);
+    display: inline-block;
+  }
+}

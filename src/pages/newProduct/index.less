@@ -1,0 +1,101 @@
+@import "../../assets/global.less";
+section.banner-container{
+    img{
+        width:100%;
+        display:block;
+    }
+}
+.module-title {
+    text-align: center;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 32px;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        background-color: @green;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    p.note {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+section.product-container{
+    padding: 30px 0;
+
+    .product-list-container{
+        float: left;
+        width:100%;
+        ul.product-list{
+            width:100%;
+            li.product-item{
+                margin: 0 5px 10px;
+                width: calc(100% / 3 - 10px);
+                float:left;
+                &:nth-child(3n + 1),
+                &:nth-child(3n + 3){
+                    a{
+                        &:first-child{
+                            .img{
+                                padding-top: 130%;
+                            }
+                        }
+                        &:last-child{
+                            .img{
+                                padding-top: 70%;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3n + 2){
+                    a{
+                        &:first-child{
+                            .img{
+                                padding-top: 70%;
+                            }
+                        }
+                        &:last-child{
+                            .img{
+                                padding-top: 130%;
+                            }
+                        }
+                    }
+                }
+                a{
+                    display: block;
+                    margin-bottom: 10px;
+                    transition: .6s;
+                    &:hover{
+                        transform: translateY(-2px);
+                    }
+                    .img{
+                        padding-top: 100%;
+                        .bgimg(cover);
+                    }
+                    p{
+                        display: none;
+                        line-height: 2;
+                        font-size: 16px;
+                        text-align:center;
+                        padding: 10px 0;
+                        border-top: 1px solid #ddd;
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+}
+@import "./1200.less" screen and (max-width: 1200px);
+@import "./768.less" screen and (max-width: 768px);

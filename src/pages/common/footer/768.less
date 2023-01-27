@@ -1,0 +1,40 @@
+footer{
+    // .center80{
+    //     display: flex;
+    //     align-items: center;
+    //     flex-wrap: wrap;
+    //     justify-items: center;
+    // }
+    .left-logo,
+    .right-contact{
+      float:none;
+    }
+    .left-logo{
+      width:100%;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .right-contact{
+      width:100%;
+      border-left: none;
+      ul.contact-list{
+        li.contact-item{
+          color: #999;
+          font-size: 14px;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: flex-start;
+          i{
+            width: 16px;
+            display: inline-block;
+            margin-right: 5px;
+            text-align: center;
+          }
+          span{
+            width: calc(100% - 26px);
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
